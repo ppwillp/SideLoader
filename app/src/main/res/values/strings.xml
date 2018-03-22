@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SideLoader</string>
+    <string name="start">Start!</string>
+    <string name="PPHLauncherText">PayPal Here Launcher</string>
+    <string name="invoiceNum">Invoice Number</string>
+    <string name="editInvoiceNum"></string>
+    <string name="discount">Discount %</string>
+    <string name="editDiscount">0</string>
+    <string name="paymentTerms">Payment Terms</string>
+    <string name="dueOnReceipt">Due On Receipt</string>
+    <string name="currencyCode">Currency Code</string>
+    <string name="editCurrencyCode">USD</string>
+    <string name="merchantEmail">Merchant Email</string>
+    <string name="editMerchantEmail">wpittmanHere@paypal.com</string>
+    <string name="payerEmail">Payer Email</string>
+    <string name="editPayerEmail"></string>
+    <string name="payerPhone">Payer Phone</string>
+    <string name="editPayerPhone">4025555555</string>
+    <string name="itemsAdded">Items Added</string>
+    <string name="itemCount">0</string>
+    <string name="addItemButton">Add Items</string>
+    <string name="launchPayPalHere">Launch PayPal Here</string>
+    <string name="addItem">Add Item</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="unitPrice">Price</string>
+    <string name="taxName">Tax Name</string>
+    <string name="taxRate">Tax Rate</string>
+    <string name="quantity">Quantity</string>
+    <string name="salesTax">Sales Tax</string>
+</resources>

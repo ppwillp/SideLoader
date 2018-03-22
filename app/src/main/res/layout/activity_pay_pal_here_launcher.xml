@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sideloader.PayPalHereLauncher">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PPHLauncherText"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/item"
+            android:text="@string/invoiceNum" />
+
+        <EditText
+            android:id="@+id/editInvoiceNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editInvoiceNum"
+            style="@style/item"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/paymentTerms"
+            style="@style/item"/>
+
+        <EditText
+            android:id="@+id/editPaymentTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dueOnReceipt"
+            style="@style/item" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discount"
+            style="@style/item"/>
+
+        <EditText
+            android:id="@+id/editDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editDiscount"
+            android:inputType="numberDecimal"
+            style="@style/item" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/currencyCode"
+            style="@style/item"/>
+
+        <EditText
+            android:id="@+id/editCurrencyCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editCurrencyCode"
+            android:inputType="text"
+            style="@style/item"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/merchantEmail"
+            style="@style/item" />
+
+        <EditText
+            android:id="@+id/editMerchantEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editMerchantEmail"
+            android:inputType="textEmailAddress"
+            style="@style/item"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payerEmail"
+            style="@style/item"/>
+
+        <EditText
+            android:id="@+id/editPayerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editPayerEmail"
+            android:inputType="textEmailAddress"
+            style="@style/item"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payerPhone"
+            style="@style/item"/>
+
+        <EditText
+            android:id="@+id/editPayerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editPayerPhone"
+            android:inputType="phone"
+            style="@style/item"/>
+
+        <TextView
+            android:id="@+id/itemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/itemCount"/>
+
+        <Button
+            android:id="@+id/addItemButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/addItemButton"
+            android:onClick="addItem"
+            android:background="@color/black"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/launchPayPalHere"
+            android:onClick="launchPayPalHere"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
