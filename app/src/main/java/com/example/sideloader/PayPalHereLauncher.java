@@ -31,9 +31,9 @@ public class PayPalHereLauncher extends Activity {
     private static final String LOG_TAG = PayPalHereLauncher.class.getSimpleName();
     public static final String MARKET_URL = "market://details?id=com.paypal.here";
     private static final String PPH_URL_STRING = "paypalhere://takePayment/v2?accepted={0}&returnUrl={1}&invoice={2}&step=choosePayment&payerPhone={3}";
-    private static final String RETURN_URL = "pphsample://handleResponse/?Type={Type}&InvoiceId={InvoiceId}&Tip={Tip}&Email={Email}&TxId={TxId}&GrandTotal={GrandTotal}";
+    private static final String RETURN_URL = "sideloader://handleresponse/?Type={Type}&InvoiceId={InvoiceId}&Tip={Tip}&Email={Email}&TxId={TxId}&GrandTotal={GrandTotal}";
     private static final String ACCEPTED_PAYMENT_TYPES = "cash,card,paypal";
-    private static final String RESPONSE_HOST = "handleResponse";
+    private static final String RESPONSE_HOST = "handleresponse";
 
     private Invoice _invoice;
 
@@ -67,12 +67,14 @@ public class PayPalHereLauncher extends Activity {
 
         //figure out what this does
        // initializeDefaultDataList();
+        System.out.println(savedInstanceState);
     }
 
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         handleOpenURL(intent);
+        System.out.println(intent);
     }
 
     private void initializeDefaultDataList() {
@@ -127,6 +129,7 @@ public class PayPalHereLauncher extends Activity {
             _itemCount.setText(String.valueOf(_invoice));//add .getItemsCount()
         }
     }
+
 
     public void launchPayPalHere(View view) {
         _invoice.setPayerEmail(editPayerEmail.getText().toString());

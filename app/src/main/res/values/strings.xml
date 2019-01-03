@@ -13,7 +13,7 @@
     <string name="merchantEmail">Merchant Email</string>
     <string name="editMerchantEmail">wpittmanHere@paypal.com</string>
     <string name="payerEmail">Payer Email</string>
-    <string name="editPayerEmail"></string>
+    <string name="editPayerEmail">test@mail.com</string>
     <string name="payerPhone">Payer Phone</string>
     <string name="editPayerPhone">4025555555</string>
     <string name="itemsAdded">Items Added</string>
